@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.dark body {
+  background-color: #373737;
+}
+
+.App {
+  box-sizing: border-box;
+}
+
+.dark {
+  background: #373737;
+}
+
+.logo {
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.imgCard {
+  width: 250px;
+  height: 250px;
+}
+
+/*Header*/
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 17% 0 17%;
+  transition: all 0.1s ease;
+}
+
+.btnTema {
+  color: #6809e1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  width: 148px;
+  height: 43px;
+  border: 1px solid #6809e1;
+  box-sizing: border-box;
+  border-radius: 61px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+.dark .btnTema {
+  border: 1px solid white;
+  background-color: rgb(44, 42, 42);
+  color: white;
+}
+
+/*Search*/
+.containerBusqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  align-items: center;
+  height: 50vh;
+}
+
+.containerBusqueda h2 {
+  color: #6809e1;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.dark .containerBusqueda h2 {
+  color: #ffff;
+}
+
+.containerBusqueda input {
+  width: 26rem;
+  height: 2.3rem;
+  border: 1px solid #121212;
+  border-radius: 61px 0px 0px 61px;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.dark .containerBusqueda input {
+  border: 1px solid #ffff;
+  background-color: rgb(44, 42, 42);
+  color: #ffff;
+}
+
+.imgSearch {
+  width: 25rem;
+  margin-left: 1rem;
+  border: 0;
+}
+
+.containerBusqueda button {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  width: 4rem;
+  height: 2.3rem;
+  background: #572ee5;
+  border: 1px solid #000000;
+  border-radius: 0px 61px 61px 0px;
+}
+
+.dark .containerBusqueda button {
+  border: 1px solid #ffffff;
+}
+
+/* Autocompletación*/
+.inputAuto {
+  position: relative;
+}
+
+.containerAutoComple {
+  width: 396px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #6809e1;
+  position: absolute;
+  margin-bottom: 50px;
+  margin-left: 1.5%;
+}
+
+.sugerencias {
+  display: flex;
+  align-items: center;
+  color: #3f3f3f;
+  width: 100%;
+  height: 46px;
+  border: 0.5px solid rgb(220, 217, 220);
+  background-color: white;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.dark .sugerencias {
+  color: #ffff;
+  border: 0.5px solid rgb(220, 217, 220);
+  background-color: #373737;
+}
+
+.sugerencias:hover {
+  color: white;
+  background-color: #572ee5;
+}
+
+/*Result*/
+.containerResultados {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.containerResultados h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 28px;
+  color: #572ee5;
+  margin-bottom: 3rem;
+}
+
+.dark .containerResultados h2 {
+  color: #ffff;
+}
+
+.listResult {
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.dark .listResult {
+  background-color: #212121;
+}
+
+.card {
+  margin: 5% 2% 2% 2%;
+  box-sizing: border-box;
+}
+
+/*No Result */
+
+.dark .textNoResult {
+  color: #ffff;
+  background-color: #212121;
+}
+
+.containerNoResult {
+  height: 30vh;
+}
